@@ -52,10 +52,6 @@ A: The second owner is very tired from the BFS copying process and took a perman
 **Q: What if I have leftover \r from ancient times?**  
 A: Fear not, we have trimmed them! Or at least, we have a cunning plan to handle CRLF. 
 
-**Q: Why can’t I see the source code magic?**  
-A: This project is about learning. We want you to focus on your own approach and watch out for BST illusions and pointers.  
-   But if you really want, here is a youtube video that solves the excercise step by step: https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab
-
 **Q: Does the code leak memory?**  
 A: We sure tried our best.
 
