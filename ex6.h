@@ -458,8 +458,16 @@ void freeAllOwners(void);
  */
 void mainMenu(void);
 
+void addOwner(char* ownerName, PokemonNode* starter);
+void swapOwnerData(OwnerNode* a, OwnerNode* b);
+int compareByNameNode(const void* a, const void* b);
+void collectAll(PokemonNode* root, NodeArray* na);
+void addNode(NodeArray* na, PokemonNode* node);
+void initNodeArray(NodeArray* na, int cap);
+
 // Array of Pokemon data
-static const PokemonData pokedex[] = {
+static const PokemonData pokedex[] = 
+{
     {1, "Bulbasaur", GRASS, 45, 49, CAN_EVOLVE},
     {2, "Ivysaur", GRASS, 60, 62, CAN_EVOLVE},
     {3, "Venusaur", GRASS, 80, 82, CANNOT_EVOLVE},
@@ -610,6 +618,8 @@ static const PokemonData pokedex[] = {
     {148, "Dragonair", DRAGON, 61, 84, CAN_EVOLVE},
     {149, "Dragonite", DRAGON, 91, 134, CANNOT_EVOLVE},
     {150, "Mewtwo", PSYCHIC, 106, 110, CANNOT_EVOLVE},
-    {151, "Mew", PSYCHIC, 100, 100, CANNOT_EVOLVE}};
+    {151, "Mew", PSYCHIC, 100, 100, CANNOT_EVOLVE}
+};
+    
 
 #endif // EX6_H
